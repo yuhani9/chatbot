@@ -7,7 +7,7 @@ st.write("このシンプルなチャットボットは、Google の Gemini API 
 
 # Streamlit Community CloudのSecretsからAPIキーを取得
 # .streamlit/secrets.toml に GEMINI_API_KEY = "YOUR_API_KEY" を設定してください
-gemini_api_key = st.secrets.get("AIzaSyDld8LUeA3WwujPsZB7XvmGd8O_s1bV-JM")
+gemini_api_key = st.secrets.get("GEMINI_API_KEY")
 
 if not gemini_api_key:
     st.info("Streamlit Community CloudのSecretsに `GEMINI_API_KEY` を設定してください。", icon="🗝️")
